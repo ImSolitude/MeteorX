@@ -924,6 +924,7 @@ h3 {
   margin: 0px auto 50px;
   display: flex;
   justify-content: space-around;
+  padding: 20px;
 }
 
 .social-links a {
