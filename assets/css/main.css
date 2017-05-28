@@ -969,6 +969,7 @@ h3 {
 form {
   max-width: 450px;
   margin: 0px auto 50px;
+  padding: 20px;
 }
 
 form input, form textarea {
