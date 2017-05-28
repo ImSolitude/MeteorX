@@ -665,56 +665,56 @@ h3 {
 }
 
 .thumb-unit._1 {
-  background-image: url("/assets/imgs/work1/work1.png");
+  background-image: url("../imgs/work1/work1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .thumb-unit._2 {
-  background-image: url("/assets/imgs/work2/work2.png");
+  background-image: url("../imgs/work2/work2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .thumb-unit._3 {
-  background-image: url("/assets/imgs/work3/work3.png");
+  background-image: url("../imgs/work3/work3.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .thumb-unit._4 {
-  background-image: url("/assets/imgs/work4/work4.png");
+  background-image: url("../imgs/work4/work4.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .thumb-unit._5 {
-  background-image: url("/assets/imgs/work5/work5.png");
+  background-image: url("../imgs/work5/work5.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .thumb-unit._6 {
-  background-image: url("/assets/imgs/work6/work6.png");
+  background-image: url("../imgs/work6/work6.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .thumb-unit._7 {
-  background-image: url("/assets/imgs/work7/work7.png");
+  background-image: url("../imgs/work7/work7.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .thumb-unit._8 {
-  background-image: url("/assets/imgs/work8/work8.png");
+  background-image: url("../imgs/work8/work8.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
