@@ -7,7 +7,6 @@ import $ from 'jquery';
 $(document).ready(function(e){
         $('a[href^="#"]').on('click', function(e) {
             var target = $( $(this).attr('href') );
-            console.log(target);
             if(target.length) {
                 e.preventDefault();
                 $('html, body').animate({
@@ -40,13 +39,13 @@ $(document).ready(function(e){
                 newHtml = "./work/work" + $number +".html";
             $('.project-load').html(spinner).load(newHtml);
             $('.project-title').text(newTitle);
-            console.log($number);
+
         });
 
 
         // client scroll
         $('.client-logo, .clients-mobile-nav span').on('click', function() {
-            console.log('gggg');
+
             var $this = $(this),
                 $siblings = $this.parent().children(),
                 $position = $siblings.index($this);
