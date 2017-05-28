@@ -1,0 +1,122 @@
+h3
+    padding: 100px 0px 30px 0px
+
+    @extend %small-bold
+    color: $accentColor
+    text-align: center
+.face-lockup::before,
+.face-lockup::after
+  display: table
+  content: " "
+  clear: both
+
+.face-lockup
+    max-width: 780px
+    margin: 0 auto
+
+    .face-img
+        width: 200px
+        height: 200px
+        max-width: 100%
+        font-size: 4em
+        background: $borderColor
+        order: 3
+        margin: 0
+        @extend %flex-center
+        @extend %transition
+        @include circleBorder($borderColor)
+
+        &:hover
+            background-color: $secondColor
+            border-color: $secondColor
+            color: #fff
+
+    [class^="icon-"]
+        width: 100px
+        height: 100px
+        background-color: #E1EAEF
+        @extend %flex-center
+        @include circleBorder($borderColor)
+        @extend %transition
+        &:hover
+            background-color: $secondColor
+            border-color: $secondColor
+            color: #fff
+        font-size: 2em
+        &.icon-pencil
+            order: 1
+        &.icon-mouse
+            order: 2
+        &.icon-browser
+            order: 4
+        &.icon-video
+            order: 5
+
+.blurb
+    padding: 0px 15px
+    max-width: 620px
+    margin: 50px auto
+    font-size: 24px
+    text-align: center
+    font-weight: 300
+.column
+    float: left
+    height: 200px
+    @extend %flex-center
+
+@for $i from 1 through 12
+    ._#{$i}
+        width: calc(100% / #{$i})
+
+@media screen and (max-width: 650px)
+    ._3
+        width: 100%
+        order: 1
+    ._6
+        width: 50%
+    ._6:nth-of-type(1)
+        order: 2
+    ._6:nth-of-type(2)
+        order: 3
+    ._6:nth-of-type(3)
+        order: 4
+    ._6:nth-of-type(4)
+        order: 5
+
+
+.skill-lockup
+    max-width: 500px
+    margin: 100px auto
+    color: #999
+    clear: both
+    .skill-unit
+        width: 250px
+        float: left
+    .skill-icon
+        font-size: 0
+        margin: 0px 0px 30px
+        span
+            display: inline-block
+            height: 14px
+            width: 14px
+            background-color: $pinkColor
+            margin-right: 5px
+            border-radius: 50%
+            &:after
+                content: ''
+                display: block
+                width: 10px
+                height: 10px
+                background: #fff
+                border-radius: 50%
+                margin: 2px
+
+        @for $i from 1 through 10
+            &.skill-#{$i} span:nth-child(n + #{$i + 1})
+                background-color: $darkColor
+
+@media screen and (max-width: 541px)
+    .skill-lockup
+        width: 270px
+        .skill-unit
+            width: 200px

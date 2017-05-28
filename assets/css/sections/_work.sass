@@ -1,0 +1,141 @@
+//.alt-section
+    background-color: $darkColor
+    height: auto
+.section-work
+    overflow-x: hidden
+    background: $darkColor
+.work-belt
+    width: 200%
+    position: relative
+    left: 0%
+    transition: all 0.8s ease
+.work-wrap, .thumb-wrap
+    width: 50%
+    float: left
+    padding: 10px
+.thumb-container
+    max-width: 960px
+    margin: 0 auto
+    padding-bottom: 100px
+    .thumb-unit
+        display: block
+        position: relative
+        float: left
+        overflow: hidden
+        width: 25%
+        padding-top: 16%
+        .thumb-overlay
+            position: absolute
+            height: 100%
+            top: 100%
+            left: 0
+            right: 0
+            bottom: 0%
+            text-align: center
+            opacity: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            @extend %transition
+            background: fade-out($darkPink, 0.1)
+        &:hover .thumb-overlay
+            opacity: 1
+            position: absolute
+            top: 0%
+            left: 0
+            right: 0
+            bottom: 0
+        strong
+            display: block
+            padding: 20px 20px 0px 20px
+            color: white
+            font-weight: 300
+            text-transform: uppercase
+            font-size: 20px
+            line-height: 1.2
+        .zoom-icon
+            font-size: 25px
+            color: white
+
+
+.work-container
+    position: relative
+    max-width: 600px
+    margin: 0 auto
+    display: none
+
+    h4
+        color: $accentColor
+        font-weight: 300
+        text-transform: uppercase
+        margin: 0 0 20px
+        font-size: 20px
+        line-height: 1.2
+        position: relative
+        top: 10px
+        @extend %transition
+        @media (max-width:740px)
+            left: 40px
+    div
+        max-width: 100%
+    img
+        max-width: 100%
+        margin-bottom: 20px
+    .work-return
+        color: $accentColor
+        font-size: 30px
+        cursor: pointer
+        opacity: 0.5
+        position: absolute
+        left: -40px
+        @extend %transition
+        &:hover
+            opacity: 1
+        @media (max-width:740px)
+            left: 10px
+            margin-right: 10px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@for $i from 1 through 8
+    .thumb-unit._#{$i}
+        background:
+            image: url('/assets/imgs/work#{$i}/work#{$i}.png')
+            position: center center
+            repeat: no-repeat
+            size: cover
+
+%transition
+    transition: all 0.33s ease
+
+
+@media screen and (max-width: 650px)
+    .thumb-container
+        .thumb-unit
+            width: 50%
+            padding-top: 25%
+
+@media screen and (max-width: 480px)
+    .thumb-container
+        .thumb-unit
+            width: 100%
+            padding-top: 25%

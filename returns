@@ -1,0 +1,2 @@
+ERROR: "bundle show" was called with arguments ["minima", "=", "the", "gem", "path"]
+Usage: "bundle show GEM [OPTIONS]"

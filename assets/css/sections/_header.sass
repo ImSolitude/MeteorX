@@ -1,0 +1,66 @@
+header
+
+    background: linear-gradient(to right, #5d4157, #a8caba)
+    // background: url('../imgs/heroBg.jpg') center center
+    background-size: cover
+    padding-bottom: 80px
+    .logo
+        width: 50px
+        height: 50px
+        float: left
+        margin: 10px 0px 0px 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        i
+            color: rgba(0, 0, 0, 0.7)
+            font-size: 2em
+
+    nav
+        float: right
+        padding: 30px 30px 0px 0px
+        a
+
+            display: inline-block
+            margin-left: 20px
+            text-decoration: none
+            color: rgba(0, 0, 0, 0.7)
+            @extend %small-bold
+            &:hover
+                color: rgba(0, 0, 0 , 1)
+
+    h1
+        text-align: center
+        font:
+            size: 4.5em
+            weight: 700
+        color: white
+        text-transform: uppercase
+        letter-spacing: 0.05em
+        margin: 20px 10px
+        clear: both
+        padding-top: 80px
+        span
+            display: inline-block
+            padding: 0.2em 0.5em
+            border: 10px solid white
+    .headerDesc
+        @extend %small-bold
+        text-align: center
+        letter-spacing: 0.05em
+        line-height: 1
+        color: white
+
+
+@media (max-width: 640px)
+    header
+        .logo
+            float: none
+            width: auto
+            margin: 0
+        nav
+            float: none
+            text-align: center
+            padding-top: 10px
+        h1
+            padding-top: 0px
