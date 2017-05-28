@@ -88,7 +88,7 @@ $(document).ready(function(e){
         // next-prev
                 $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
 
-                $(".biglink").fitText(1, { minFontSize: '42px', maxFontSize: '100px' });
+                // $("#fitThis").fitText(0.2, { minFontSize: '22px', maxFontSize: '52px' });
 
 
             $('#form-input').submit(function(){
