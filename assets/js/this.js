@@ -37,7 +37,7 @@ $(document).ready(function(e){
                 $number = $this.attr('class').slice(-1);
                 newTitle = $this.find('strong').text();
                 spinner = '<div class="loader">Loading...</div>',
-                newHtml = "/work/work" + $number +".html";
+                newHtml = "/MeteorX/work/work" + $number +".html";
             $('.project-load').html(spinner).load(newHtml);
             $('.project-title').text(newTitle);
             console.log($number);
